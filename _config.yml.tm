@@ -6,6 +6,7 @@ theme: jekyll-theme-chirpy
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
 baseurl: ""
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
@@ -13,49 +14,65 @@ lang: en
 
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
 prefer_datetime_locale:
-  
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Jerusalem
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: America/Chicago
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Tech 5kipp3r # the main title
+title: Techno Tim                          # the main title
 
-tagline: DevOps SRE Engineer | Tech Content Creator | HomeLab | 🇺🇸 he | Full Nerd 
+tagline: Software Engineer | Tech Content Creator | HomeLab | 🇺🇸 🇯🇵 | Full Nerd   # it will display as the sub-title
 
-description: >- # used by seo meta and the atom feed
-  Techno Home - Documentation and More
+description: >-                        # used by seo meta and the atom feed
+ Techno Tim Home - Documentation and More
 
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://5kipp3rm.github.io"
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 'https://technotim.live'
 
 github:
-  username: 5kipp3rm # change to your github username
-
+  username: timothystewart6             # change to your github username
 twitter:
-  username: 5kipp3rm # change to your twitter username
-
+  username: technotimlive            # change to your twitter username
+patreon:
+  username: technotim
+twitch:
+  username: technotim
+instagram:
+  username: techno.tim
+facebook:
+  username: TechnoTimLive
+discord:
+  invitelink: akMB4HJpvF
+youtube:
+  channelid: UCOk-gHyjcWZNj3Br4oxwh0A
+tiktok:
+  username: '@technotim'
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 5kipp3rm
-  # email: 5kipp3rm@gmail.com # change to your email address
+  name: Techno Tim
+  # email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/5kipp3rm # change to your twitter homepage
-    - https://github.com/5kipp3rm # change to your github homepage
+    - https://l.technotim.live/twitter      # change to your twitter homepage
+    # - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-# google_site_verification: # fill in to your verification string
+# google_site_verification: google_meta_tag_verification # change to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: 'G-NZ5V7DM8F5'          # Fill with your Google Analytics ID
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
+    cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
 # Prefer color scheme setting.
 #
@@ -78,50 +95,49 @@ theme_mode: dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://avatars.githubusercontent.com/u/1322205?s=400&u=5b4f2219006577dc0426007fe5a02391c4899677&v=4
 
-# boolean type, the global switch for TOC in posts.
+# boolean type, the global switch for ToC in posts.
 toc: true
 
 comments:
-  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: giscus        # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo:         # <gh-username>/<repo>
+    issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: 5kipp3rm/5kipp3rm.github.io
-    repo_id: R_kgDOK0tcLw
+    repo: techno-tim/techno-tim.github.io
+    repo_id: MDEwOlJlcG9zaXRvcnkyNTQ3ODQ3Nzk
     category: Comments
-    category_id: DIC_kwDOK0tcL84Cbdth
-    mapping: pathname # optional, default to 'pathname'
-    input_position: bottom # optional, default to 'bottom'
-    lang: en # optional, default to the value of `site.lang`
-    reactions_enabled: 1 # optional, default to the value of `1`
+    category_id: DIC_kwDODy-1C84CSN7z
+    mapping: pathname          # optional, default to 'pathname'
+    input_position: bottom  # optional, default to 'bottom'
+    lang: en            # optional, default to the value of `site.lang`
+    reactions_enabled: 1
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled:      # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: # [development|production]
+    env:          # [development|production]
 
 pwa:
-  enabled: false # the option for PWA feature
+  enabled: false   # the option for PWA feature
 
 paginate: 10
-
 
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -137,12 +153,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""          # An empty string here means all files in the project
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
@@ -152,7 +168,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs             # see `site.collections`
     values:
       layout: page
       permalink: /:title/
@@ -191,6 +207,7 @@ exclude:
   - reference_files
   - kubernetes
   - Dockerfile
+
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
