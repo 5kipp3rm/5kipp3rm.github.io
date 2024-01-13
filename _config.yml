@@ -1,6 +1,14 @@
-# The Site Configuration
+# global settings
+title: "Tech blog for 5kipp3r"
+description: Documentation for Techno DevOps SRE/Platform Engineer videos for all your copy pasta needs!
+permalink: /posts/:title/
+url: "https://5kipp3rm.github.io"
+relative_permalinks: false
 
-# Import the theme
+# build settings
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules", '*.gem', '*.gemspec',"tools", "docs", "README.md", "LICENSE", "gulpfile.js", "package-lock.json", "archive_old", "template- reference_files"]
+markdown: kramdown
+
 theme: jekyll-theme-chirpy
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
@@ -15,16 +23,11 @@ timezone: Asia/Jerusalem
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Tech 5kipp3r                         # the main title
 
 tagline: DevOps SRE Engineer | DevOps Excellence in Automation, SRE Prowess in Resilience Where Code Meets Reliability.
 
-description: >-                        # used by seo meta and the atom feed
-  Documentation for Techno Tim videos
-  for all your copy pasta needs!
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://5kipp3rm.github.io"
 
 github:
   username: 5kipp3rm             # change to your github username
@@ -47,11 +50,11 @@ tiktok:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Techno Tim
+  name: Techno DevOps SRE
   # email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/technotimlive      # change to your twitter homepage
+    # - https://twitter.com/technotimlive      # change to your twitter homepage
     # - https://github.com/techno-tim       # change to your github homepage
     # - https://twitch.tv/technotim
     # Uncomment below to add more social links
@@ -119,7 +122,6 @@ kramdown:
 
 # DO NOT change this unless you're a Pro user on Jekyll and Web development,
 # Or you think you're smart enough to change other relevant URLs within this template.
-permalink: /posts/:title/
 
 collections:
   tabs:
@@ -204,22 +206,7 @@ compress_html:
   ignore:
     envs: [development]
 
-exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-  - '*.gem'
-  - '*.gemspec'
-  - tools
-  - docs
-  - README.md
-  - LICENSE
-  - gulpfile.js
-  - node_modules
-  - package.json
-  - package-lock.json
-  - archive_old
-  - template- reference_files
+
 
 jekyll-archives:
   enabled: [categories, tags]
