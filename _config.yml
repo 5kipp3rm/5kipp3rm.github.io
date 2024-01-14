@@ -1,79 +1,59 @@
-# global settings
-title: "Tech blog for 5kipp3r"
-description: Documentation for Techno DevOps SRE/Platform Engineer videos for all your copy pasta needs!
-permalink: /posts/:title/
-url: "https://5kipp3rm.github.io"
-relative_permalinks: false
+# The Site Configuration
 
-# build settings
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules", '*.gem', '*.gemspec',"tools", "docs", "README.md", "LICENSE", "gulpfile.js", "package-lock.json", "archive_old", "template- reference_files"]
-markdown: kramdown
-
+# Import the theme
 theme: jekyll-theme-chirpy
 
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
-baseurl: ''
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ""
 
-# the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
-lang: en-US
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en-us
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Jerusalem
+timezone: Asia/Karachi
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# --------------------------
+# ↓ --------------------------
 
-tagline: DevOps SRE Engineer | DevOps Excellence in Automation, SRE Prowess in Resilience Where Code Meets Reliability.
+title: Mystic0x1 # the main title
 
+tagline: Offensive Security Consultant | CREST CRT/CPSA | OSCP | CRTP | Aspiring Red Teamer # it will display as the sub-title
+
+description: >- # used by seo meta and the atom feed
+  Cyber Security Blog. Web Application Security, API Security, Active Directory and Cloud Security.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://mystic0x1.github.io"
 
 github:
-  username: 5kipp3rm             # change to your github username
+  username: mystic0x1 # change to your github username
+
 twitter:
-  username: 5kipp3rm            # change to your twitter username
-patreon:
-  username: 5kipp3rm
-twitch:
-  username: 5kipp3rm
-instagram:
-  username: 5kipp3rm.tim
-facebook:
-  username: 5kipp3rm
-discord:
-  invitelink: 
-youtube:
-  channelid: 
-tiktok:
-  username: '@5kipp3rm'
+  username: 0xfawaz # change to your twitter username
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Techno DevOps SRE
-  # email: example@doamin.com             # change to your email address
+  name: Fawaz Masood Qureshi
+  email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/technotimlive      # change to your twitter homepage
-    # - https://github.com/techno-tim       # change to your github homepage
-    # - https://twitch.tv/technotim
+    - https://twitter.com/0xfawaz # change to your twitter homepage
+    - https://github.com/mystic0x1 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/fawaz-masood-qureshi
 
-google_site_verification: google_meta_tag_verification # change to your verification string
-# --------------------------
+google_site_verification: # fill in to your verification string
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: ''          # Fill with your Google Analytics ID
-  pv:
-    # The Google Analytics pageviews switch.
-    # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
-    enabled: false
-    # the next options only valid when `google_analytics.pv` is enabled.
-    proxy_url: ''
-    proxy_endpoint: ''
-    cache: false  # pv data local cache, good for the users from GFW area.
+  id: # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -86,24 +66,51 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   dark # [light|dark]
+theme_mode: dark # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: ''
+img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/152220867?v=4
+avatar: /assets/img/avatars/dp.jpg
 
-# boolean type, the global switch for ToC in posts.
+# boolean type, the global switch for TOC in posts.
 toc: true
 
-disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+comments:
+  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: mystic0x1/mystic0x1.github.io # <gh-username>/<repo>
+    repo_id: R_kgDOKDK1Qg
+    category: "Comments"
+    category_id: "DIC_kwDOKDK1Qs4CYXGF"
+    mapping: # optional, default to 'pathname'
+    input_position: top # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development|production]
+
+pwa:
+  enabled: false # the option for PWA feature
 
 paginate: 10
 
@@ -111,7 +118,7 @@ paginate: 10
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -120,83 +127,44 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# DO NOT change this unless you're a Pro user on Jekyll and Web development,
-# Or you think you're smart enough to change other relevant URLs within this template.
-
 collections:
   tabs:
     output: true
     sort_by: order
 
-
 defaults:
-  -
-    scope:
-      path: ''          # An empty string here means all files in the project
+  - scope:
+      path: "" # An empty string here means all files in the project
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
-      toc: true         # Display TOC column in posts.
-  -
-    scope:
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
       path: _drafts
     values:
       comments: false
-  -
-    scope:
-      path: ''
-      type: tabs             # see `site.collections`
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
     values:
       layout: page
       permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
 
 sass:
   style: compressed
 
-
-# asset section
-assets:
-  source_maps: true
-  destination: "/assets"
-  compression: false
-  gzip: false
-  defaults:
-    integrity:
-      {css,img,js}: false
-  caching:
-    enabled: true
-    path: ".jekyll-cache/assets"
-    type: file
-  # --
-  # Assets you wish to always have compiled.
-  #   This can also be combined with raw_precompile which
-  #   copies assets without running through the pipeline
-  #   making them ultra fast.
-  # --
-  precompile: []
-  raw_precompile: [
-    #
-  ]
-  # --
-  # baseurl: whether or not to append site.baseurl
-  # destination: the folder you store them in on the CDN.
-  # url: the CDN url (fqdn, or w/ identifier).
-  # --
-  cdn:
-    baseurl: false
-    destination: false
-    url: null
-  # --
-  # See lib/jekyll/assets/config.rb
-  #   for a list of defaults
-  # --
-  sources:
-    - _assets/custom
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}
 compress_html:
   clippings: all
   comments: all
@@ -206,7 +174,16 @@ compress_html:
   ignore:
     envs: [development]
 
-
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - package*.json
 
 jekyll-archives:
   enabled: [categories, tags]
