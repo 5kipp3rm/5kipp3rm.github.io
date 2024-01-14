@@ -4,7 +4,7 @@ description: Documentation for Techno DevOps SRE/Platform Engineer videos for al
 permalink: /posts/:title/
 url: "https://5kipp3rm.github.io"
 relative_permalinks: false
-
+theme: jekyll-theme-minimal
 # build settings
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules", '*.gem', '*.gemspec',"tools", "docs", "README.md", "LICENSE", "gulpfile.js", "package-lock.json", "archive_old", "template- reference_files"]
 markdown: kramdown
